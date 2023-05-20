@@ -1,0 +1,38 @@
+{
+  "cSpell.words": [
+    "allcount",
+    "biggenre",
+    "gensaku",
+    "hyoka",
+    "isbl",
+    "isgl",
+    "isstop",
+    "istenni",
+    "istensei",
+    "iszankoku",
+    "kaiwaritu",
+    "lastup",
+    "LTRB",
+    "ncode",
+    "novelupdated",
+    "refacted",
+    "refetchable",
+    "riverpod",
+    "sasie",
+    "userid",
+    "yomuy"
+  ],
+  "[dart]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "quickfix.insertSemicolon": true
+    }
+  },
+  "cmake.sourceDirectory": "C:/Users/weclk/Github/yomuy/linux"
+}
