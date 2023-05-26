@@ -124,6 +124,56 @@ class NovelInfo {
       json["updated_at"],
     );
   }
+
+  get isEnd {
+    return end == 0;
+  }
+
+  get isStop {
+    return isstop == 1;
+  }
+
+  get isR15 {
+    return isr15 == 1;
+  }
+
+  get isBL {
+    return isbl == 1;
+  }
+
+  get isGL {
+    return isgl == 1;
+  }
+
+  get isZankoku {
+    return iszankoku == 1;
+  }
+
+  get isTensei {
+    return istensei == 1;
+  }
+
+  get isTenni {
+    return istenni == 1;
+  }
+
+  DateTime get firstUploadAt {
+    final isRightFormat = _isRightDateFormat(generalFirstup);
+    return isRightFormat ? DateTime.parse(generalFirstup) : DateTime.now();
+  }
+
+  DateTime get lastUploadAt {
+    final isRightFormat = _isRightDateFormat(generalLastup);
+    return isRightFormat ? DateTime.parse(generalLastup) : DateTime.now();
+  }
+
+  // **********************
+  //        PRIVAte
+  // **********************
+
+  bool _isRightDateFormat(String date) {
+    return generalFirstup.contains("-") && generalFirstup.contains(":");
+  }
 }
 
 final novelInfoSample = NovelInfo(
@@ -136,8 +186,8 @@ final novelInfoSample = NovelInfo(
   1,
   "",
   "",
-  "generalFirstup",
-  "generalLastup",
+  "9999-12-31 23:59:59",
+  "9999-12-31 23:59:59",
   1,
   1,
   1,
@@ -164,6 +214,6 @@ final novelInfoSample = NovelInfo(
   1,
   1,
   1,
-  "novelupdatedAt",
-  "updatedAt",
+  "9999-12-31 23:59:59",
+  "9999-12-31 23:59:59",
 );

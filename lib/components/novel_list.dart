@@ -16,7 +16,7 @@ class _NovelListState extends State<NovelList> {
   Widget build(BuildContext context) {
     if (widget.novels.isEmpty) {
       return const Center(
-        child: Text("小説が存在しません。"),
+        child: Text("保存済みの小説が存在しません。"),
       );
     } else {
       return FutureBuilder(

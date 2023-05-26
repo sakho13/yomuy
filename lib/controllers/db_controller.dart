@@ -3,6 +3,8 @@ import 'dart:developer';
 import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:yomuy/types/episode_info.dart';
+import 'package:yomuy/types/novel_info.dart';
 
 class DBController {
   final String _dbFileName = "yomuy_db.sqlite";

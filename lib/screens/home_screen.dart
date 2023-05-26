@@ -18,49 +18,7 @@ class _HomePageState extends State<HomePage> {
 
   final DBController dbController = DBController();
 
-  final List<NovelInfo> _novels = [
-    NovelInfo(
-      "aa",
-      "sample1",
-      "story",
-      1,
-      "userid",
-      0,
-      0,
-      "gensaku",
-      "keyword",
-      "general_firstup",
-      "general_lastup",
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      "novelupdated_at",
-      "updated_at",
-    )
-  ];
+  final List<NovelInfo> _novels = [novelInfoSample, novelInfoSample];
 
   @override
   void initState() {
